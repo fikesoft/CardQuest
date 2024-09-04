@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome  IMPORTANT-->
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/game-style.css">
+    <title>CardQuest</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="container-title">Create and upload your own cards</h1>
+        <div class="game-card-counter inactive">
+            <p class="actual-number"></p>
+            <p class="bar">/</p>
+            <p class="total-number"></p>
+        </div>
+        <div class="container-card">
+            <p class="text-question-link"> How CardQuest game works?</p>
+            <p class="text-answer-link">CardQuest is a card game designed to spark 
+                creativity and conversation. Each player draws a card with a 
+                unique question or prompt, then creates their own question cards 
+                inspired by it. The game encourages thoughtful engagement and evolving dialogue, perfect for any gathering. As players contribute, 
+                the deck grows, keeping the experience fresh and exciting every time. 
+            </p>
+            
+            <textarea name="" id="" class="text-area-question-link" placeholder="Enter your question..."></textarea>
+            <textarea name="" id="" class="text-area-answer-link" placeholder="Enter your answer... "></textarea>
+
+        </div>
+       
+        <!--active game mode -->
+        <div class="container-button">
+            <button  class="button-start active" id="button-start">Start </button>
+
+            <div class="container-button-game inactive">
+                <button id="button-create"> Create </button>
+                
+                <button id="button-upload"> Upload</button>
+                <button id="button-save"> Save </button>
+                <button id="button-cancel"> Cancel </button>
+                <button id="button-add"> Add</button>
+            </div>
+            <input type="file" id="file-content" class="file-content inactive"> 
+        </div>
+
+        <div class="container-arrows inactive">
+            <span class="arrow-left"><img src="/img/left-arrow-angle .png" alt=""></span>
+            <span class="arrow-right"><img src="/img/right-arrow-angle.png" alt=""></span>
+        </div>
+
+    </div>
+    <script type="module" src="/js/game-js/main.js"></script>
+</body>
+</html>

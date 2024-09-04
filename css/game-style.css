@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body {
+    background: rgb(171,66,198);
+    background: linear-gradient(90deg, rgba(171,66,198,0.6208858543417367) 30%, rgba(207,0,255,1) 100%);
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+   
+}
+
+.container {
+    max-width: 1240px;
+    padding: 200px 20px 200px 20px;
+    margin: 0 auto;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+
+}
+
+.container-title {
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.typing {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #fff; /* Cursor */
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #fff; }
+}
+
+
+.container-card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 20px;
+    
+    background-color: #fff;
+    color: black;
+    width: 50%;
+    padding: 30px 20px;
+    border-radius: 16px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
+}
+.text-question-link{
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #fff; /* Cursor */
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+.container-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.button-start.active{
+    display: flex;
+}
+
+.button-start.inactive{
+    display: none;
+}
+
+.container-button button {
+    cursor: pointer;
+    padding: 12px 42px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ff8c00; /* Orange button color */
+    color: #fff;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.container-button button:hover {
+    background-color: #e07b00; /* Darker orange on hover */
+}
+
+.container-button  button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.5); /* Custom focus shadow */
+}
+
+.container-button-game.inactive{
+    display: none;
+}
+.container-button-game{
+    display: flex;
+    gap: 20px;
+}
+.file-content.inactive{
+ display: none;
+}
+.file-content.active{
+    display: block;
+   }
+   
+
+/*CARD COUNTER------------------------*/
+.game-card-counter{
+    gap: 5px;
+    color: #F0F0F0; /* A very light grey for better contrast */
+    font-size: 1em; /* Slightly larger font size for better visibility */
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.3); /* Darker translucent background for contrast */
+    border-radius: 12px; /* Softer rounded corners */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly darker shadow for more depth */
+}
+.game-card-counter.inactive{
+    display: none;
+    
+}
+#button-upload{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#file-content{
+    background-color: #1e1e1e; /* Very dark grey for a sleek look */
+    color: #e0e0e0; /* Light grey text color for contrast */
+    max-width: 100px;
+    padding: 5px; /* Padding around the content */
+    border-radius: 8px; /* Rounded corners to match button styling */
+    font-size: 0.9em; /* Slightly smaller font size to fit within the layout */
+    margin-top: 10px; /* Space above the file content */
+    white-space: pre-wrap; /* Preserve formatting and wrap text */
+}
+.game-card-counter.active{
+    display: flex;
+}
+.game-card-counter p{
+    margin: 0;
+    padding: 5px;
+}
+
+/*ARROWS --------------------------*/
+.container-arrows.active{
+    display: block;
+}
+.container-arrows.inactive{
+    display: none;
+}
+
+.arrow-left,.arrow-right{
+    cursor: pointer;
+}
+/*SAVE ADD CANCEL----------------*/
+.container-button-game button:nth-child(3),
+.container-button-game button:nth-child(4),
+.container-button-game button:nth-child(5){
+    display: none;
+}
+
+#button-save {
+    background-color: #388E3C; /* Deep Green */
+}
+
+#button-save:hover {
+    background-color: #2E7D32; /* Darker Deep Green on hover */
+}
+
+/* Cancel Button */
+#button-cancel {
+    background-color: #f44336; /* Red */
+}
+
+#button-cancel:hover {
+    background-color: #e53935; /* Darker Red on hover */
+}
+
+/* Add Button */
+#button-add {
+    background-color: #FFEB3B; /* Yellow */
+    color: #000; /* Black text for contrast */
+}
+
+#button-add:hover {
+    background-color: #FDD835; /* Darker Yellow on hover */
+}
+
+
+
+.text-area-question-link ,
+.text-area-answer-link  {
+    outline: none;
+    border: none;
+    resize: none;
+    overflow: hidden; 
+    width: 100%;
+    display: none;
+}
+
+.text-area-question-link{
+    height: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.text-area-answer-link{
+    height: 200px;
+    font-size: 16px;
+    font-weight: 400;
+    min-height: 200px;
+}
+
+.text-question-link.inactive ,
+.text-answer-link.inactive{
+    display: none;
+}
+
+.text-area-question-link.active ,
+.text-area-answer-link.active{
+    display: flex;
+    cursor:not-allowed
+}
+#file-content{
+    background-color: #e07b00;
+    color: #000;
+    padding: 10px 20px 10px 20px;
+}
+/*---------------1024 MEDIA QUERY*/
+@media (max-width: 1024px) {
+    .container {
+        padding: 100px 20px 100px 20px;
+    }
+    
+    
+}
+
+@media(max-width:768px){
+ 
+
+}
+
+@media(max-width:480px){
+    .container-button button{
+        padding: 12px 21px;
+    }
+
+}
+
+@media(max-width:360px){
+  
+} 

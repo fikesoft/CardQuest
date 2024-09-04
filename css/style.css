@@ -1,0 +1,240 @@
+:root {
+    --primary-color: #AB42C6; /* Purple color */
+    --secondary-color: #FFFFFF; /* White color */
+    --text-color: #FFFFFF; /* White text color */
+    --link-color: #D8B4E2; /* Light purple for links */
+    --link-hover-color: #FFFFFF; /* White color for hover */
+}
+.header{
+    padding: 20px 20px 20px 20px;
+    background: rgb(171,66,198);
+    background: linear-gradient(90deg, rgba(171,66,198,0.6208858543417367) 30%, rgba(207,0,255,1) 100%);
+}
+.custom-container{
+    
+    
+
+    max-width: 1240px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    
+}
+
+
+
+.nav-justify-content-space-between{
+    gap: 30px;
+}
+.navbar-brand{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar-nav .nav-item {
+    margin-right: 70px;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.fa-bars, .fa-times {
+    color: #fff;
+    font-size: 30px;
+
+  }
+/*----------------------------LANDING-------------------------------*/
+
+.landing{
+    background: rgb(171,66,198);
+    background: linear-gradient(90deg, rgba(171,66,198,0.6208858543417367) 30%, rgba(207,0,255,1) 100%);
+    color: #fff;
+}
+
+.landing-title{
+    margin-top: 100px;
+    font-size: 48px;
+}
+.landing-title-text{
+    font-size: 20px;
+}
+.lading-button-try-it{
+    padding: 12px 40px  12px 40px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background-color:#fdf0fb;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+}
+.lading-button-try-it a{
+    text-decoration: none;
+    color: #000;
+}
+.lading-button-try-it i{
+    margin-left: 10px;
+    text-align: center;
+    color: #000;
+    
+   
+}
+
+.bottom-img{
+    width: 100%;
+}
+
+/*----------------------------ABOUT US-------------------------------*/
+
+.about-us{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.img-about-us{
+    max-width:300px ;
+    max-height: 300px;
+}
+
+
+
+/*----------------------------HOW IT WORKS-------------------------------*/
+
+.how-it-works {
+    padding: 25px 0;
+    background-color: #f9f9f9;
+}
+
+.title-how-it-works {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text-how-it-works {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.steps-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.step-item {
+    margin-bottom: 20px;
+}
+
+.step-title {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.step-description {
+    margin-top: 5px;
+}
+
+
+/*----------------------------OUR HISTORY-------------------------------*/
+
+.our-history {
+    padding: 50px 0;
+}
+
+.title-our-history {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-our-history {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.img-our-history {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+/*----------------------------FOOTER-------------------------------*/
+
+.site-footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 40px 0;
+}
+
+.footer-heading {
+    font-size: 1.25em;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+.footer-text {
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: var(--secondary-color);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--link-hover-color);
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon i {
+    font-size: 1.5em;
+    color: var(--secondary-color);
+    transition: color 0.3s;
+}
+
+.social-icon i:hover {
+    color: var(--link-hover-color);
+}
+
+.footer-copyright {
+    font-size: 0.8em;
+    color: var(--secondary-color);
+    margin-top: 20px;
+}
+
+
+
+
+ 
